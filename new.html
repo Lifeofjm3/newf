@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: #aaaaa9;
+            margin: 0;
+            padding: 3rem;
+            height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #login_form{
+            width: 100vw;
+   
+        }
+
+        .container{
+            display: flex;
+            box-sizing: border-box;
+            background-color:#ffffff;
+            height: auto; 
+            box-shadow: 3px 3px 10px #dbdada;
+            width: auto;
+        }
+        form{
+            display: block;
+            flex: 1;
+            padding: 2rem;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+            padding-top: 0.5rem;
+            padding-bottom:0.5rem;
+        }
+        input{
+            width: 100%;
+            outline: none;
+            padding: .5rem;
+            border: none;
+            border-bottom: 1.5px solid #8a2be2;
+        }
+        .image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            background-color: #8a2be2;
+
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .remember_me{
+            display: flex;
+        }
+        .remember_me>:first-child{
+            order: 2;
+        }
+        .remember_me:last-child{
+            order: 1;
+            margin-right: .75rem;
+            padding: 1rem 0;
+        }
+        .checkbox{
+            width: unset;
+        }
+        button{
+            background-color: #8a2be2;
+            color: #ffffff;
+            font-weight: bold;
+            margin: 1rem 0;
+            width: 100%;
+            padding: .75rem;
+            font-size: large;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .f{
+            text-decoration: none;
+        }
+        .other_login{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .hr{
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+            border: 2px solid #dbddda;
+            height: 0;
+
+        }
+        .span{
+            flex-basis: 33.33%;
+            max-width: 33.33%;
+            text-align: center;
+        }
+        .register{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="login_form">
+        <div class="container">
+            <form action="">
+                <img src="/images/logop.jpeg" alt="logo" width="80px" height="50px">
+                <h1>Welcome Guest!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, harum.</p>
+
+                <label for="Username">Username <span style="color:#ff0000">*</span></label>
+                <input type="text">
+                <label for="Password">Password <span style="color:#ff0000">*</span></label>
+                <input type="password">
+                <div class="row">
+                    <div class="remember_me">
+                        <label for="Remember_me" class="checkbox">Remember Me</label>
+                        <input type="checkbox" name="Remember_me" id="Remember_me" class="checkbox">
+                    </div>
+                    <a href="*" class="f">forget password?</a>
+                </div>
+
+                <button>Submit</button>
+                <div class="other_login">
+                    <hr class="hr">
+                    <span class="span">Or login with</span>
+                    <hr class="hr">
+                </div>
+                <button style="background: none; border: 2px solid #dbdada;color:#000000">Google</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="*" style="text-decoration: none;">Register here</a></p>
+                </div>
+            </form>
+            <div class="image">
+                <img src="/images/Secure login-rafikik.jpg" alt="">
+            </div>
+        </div>
+    </section> 
+    
+</body>
+</html>
